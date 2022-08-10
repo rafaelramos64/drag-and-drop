@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial, initial-scale=1.0">
     <title>Simple Kanban Board</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito:ital,wght@0,300;0,600;1,300;1,600;1,800&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div class="bords">
+    <div class="boards">
       <div class="board">
         <h3>To do</h3>
 
-        <div class="board__dropzone" draggable="true">
-          <div class="board__card">
-            <div class="board__card-status"></div>
-            <div class="board__card-content">To study Blockchain</div>
+        <div class="dropzone">
+          <div class="card" draggable="true">
+            <div class="card-status red"></div>
+            <div class="card-content">Learn Blockchain</div>
           </div>
         </div>
       </div>
@@ -22,10 +28,10 @@
       <div class="board">
         <h3>Doing</h3>
         
-        <div class="board__dropzone" draggable="true">
-          <div class="board__card">
-            <div class="board__card-status"></div>
-            <div class="board__card-content">Studing Javascript</div>
+        <div class="dropzone">
+          <div class="card" draggable="true">
+            <div class="card-status blue"></div>
+            <div class="card-content">Studing Javascript</div>
           </div>
         </div>
       </div>
@@ -33,13 +39,15 @@
       <div class="board">
         <h3>Done</h3>
         
-        <div class="board__dropzone" draggable="true">
-          <div class="board__card">
-            <div class="board__card-status"></div>
-            <div class="board__card-content">Learned CSS</div>
+        <div class="dropzone">
+          <div class="card" draggable="true">
+            <div class="card-status green"></div>
+            <div class="card-content">Learned CSS</div>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="main.js" defer></script>
   </body>
 </html>

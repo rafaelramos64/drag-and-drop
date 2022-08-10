@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Nunito';
+}
+
+body {
+  background-color: #130f0d;
+  color: #fff;
+}
+
+.boards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.board {
+  background-color: #141316;
+  border: 1px solid #fd951f11;
+  border-radius: 4px;
+  margin: 0 16px;
+}
+
+.board h3 {
+  padding: 16px;
+  color: #fd951fcc;
+}
+
+.dropzone {
+  padding: 16px;
+  min-width: 282px;
+  min-height: 200px;
+}
+
+.card {
+  cursor: pointer;
+  background-color: #1a1a1c;
+  padding: 16px;
+  box-shadow: 0 2px 2px -1px #fd951fcc;
+  width: 250px;
+  margin: 25px 0;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.card-status {
+  width: 30px;
+  height: 8px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.card-status.red {
+  background-color: red;
+}
+
+.card-status.blue {
+  background-color:#33adff;
+}
+
+.card-status.green {
+  background-color: #23d2ac;
+}
+
+.highlight {
+  background-color: #fd951f08;
+}
+
+.card, .dropzone {
+  transition: 0.4s;
+}
+
+.is-dragging {
+  cursor: move;
+  opacity: 0.3;
+}
+
+.over {
+  background-color: #4cd13711;
+}
